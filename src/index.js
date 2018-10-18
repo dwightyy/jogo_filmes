@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "bootstrap/dist/css/bootstrap.css";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
-import "bootstrap/dist/css/bootstrap.css";
+
 import Button from "./components/button";
 import Paragraph from "./components/paragraph";
 import Title from "./components/title";
