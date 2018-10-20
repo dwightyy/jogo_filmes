@@ -12,7 +12,7 @@ class TelaInicial extends Component {
     return (
       <div>
         <div className="row">
-          <div class="col-6 offset-md-1">
+          <div className="col-6 offset-md-1">
             <Title alignment={"text-center"} title={"Instruções"} />
           </div>
         </div>
