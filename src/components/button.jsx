@@ -3,7 +3,11 @@ import React, { Component } from "react";
 class Button extends Component {
   render() {
     return (
-      <button type="button" className="btn btn-lg  btn-secondery ">
+      <button
+        onClick={this.props.click}
+        type="button"
+        className="btn-block btn btn-lg  btn-default"
+      >
         {this.props.text}
       </button>
     );

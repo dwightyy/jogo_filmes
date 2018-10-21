@@ -1,25 +1,26 @@
-//TODO adaptar este codigo para o checkbox list com um check Pai
-console.log("loaded");
-const $ = require("jquery");
-$(document).ready(function() {
-  var checkboxes = document.querySelectorAll("input.subOption"),
-    checkall = document.getElementById("todos");
-  console.log(checkall);
+//TODO Perde o estado quando volta a pagina
+// console.log("loaded");
+// const $ = require("jquery");
 
-  for (var i = 0; i < checkboxes.length; i++) {
-    checkboxes[i].onclick = function() {
-      var checkedCount = document.querySelectorAll("input.subOption:checked")
-        .length;
+// $(document).ready(function() {
+//   var checkboxes = document.querySelectorAll("input.subOption"),
+//     checkall = document.getElementById("todos");
+//   console.log(checkall);
 
-      checkall.checked = checkedCount > 0;
-      checkall.indeterminate =
-        checkedCount > 0 && checkedCount < checkboxes.length;
-    };
-  }
+//   for (var i = 0; i < checkboxes.length; i++) {
+//     checkboxes[i].onclick = function() {
+//       var checkedCount = document.querySelectorAll("input.subOption:checked")
+//         .length;
 
-  checkall.onclick = function() {
-    for (var i = 0; i < checkboxes.length; i++) {
-      checkboxes[i].checked = this.checked;
-    }
-  };
-});
+//       checkall.checked = checkedCount > 0;
+//       checkall.indeterminate =
+//         checkedCount > 0 && checkedCount < checkboxes.length;
+//     };
+//   }
+
+//   checkall.onclick = function() {
+//     for (var i = 0; i < checkboxes.length; i++) {
+//       checkboxes[i].checked = this.checked;
+//     }
+//   };
+// });

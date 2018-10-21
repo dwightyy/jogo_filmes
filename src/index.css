@@ -1,13 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  /* height: 100vh; */
-
-  
-  font-family: -apple-system, BlinkMacSystemFont,"Karla",
-    sans-serif ;
+  font-family: -apple-system, BlinkMacSystemFont, "Karla", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 .paragraph-div {
@@ -17,6 +14,30 @@ body {
   margin-top: 2.5%;
 }
 
-#navbar1{
+#navbar1 {
   background-color: red !important;
+}
+#btnComecar {
+  margin-top: 10%;
+  margin-bottom: 1%;
+}
+
+.card {
+  margin-top: 1%;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+#btnEncerrar {
+  margin-top: 20%;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.active > span:after {
+  content: " ACTIVE";
+}
+.btn-op {
+  margin-top: 10% !important;
 }
