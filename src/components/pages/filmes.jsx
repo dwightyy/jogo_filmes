@@ -86,8 +86,7 @@ class Filmes extends Component {
               dificuldade={this.state.selectedDifficulty}
               callbackFinalizado={finzaliza}
             />
-          </h1>
-          <button onClick={finzaliza} />
+          </h1>          
         </div>
         <div className="">
           <div className="d-flex text-center justify-content-center ">
