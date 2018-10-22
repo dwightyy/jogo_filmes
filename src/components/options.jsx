@@ -5,6 +5,7 @@ class Options extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      currentSelected: "",
       style: {
         target: null,
         style: { backgroundColor: "red" },
@@ -13,14 +14,26 @@ class Options extends Component {
       }
     };
     this.resolveResposta = this.resolveResposta.bind(this);
+    this.pegaStrResposta = this.pegaStrResposta.bind(this);
   }
 
-  handleClick = index => this.setState({ activeIndex: index });
+  handleClick = index => {
+    this.setState({ activeIndex: index }, () => {
+      this.props.getResposta(
+        index,
+        this.state.perguntas,
+        this.state.currentSelected
+      );
+    });
+  };
   componentDidMount() {
     this.setState(
       { movies: this.props.movies[1], perguntas: this.props.movies[0] },
       () => {}
     );
+  }
+  pegaStrResposta(resposta) {
+    this.setState({ currentSelected: resposta });
   }
   resolveResposta(movie) {
     if (this.state.perguntas) {
@@ -30,9 +43,8 @@ class Options extends Component {
         return movie[3];
       } else if (this.state.perguntas[2] === "nomefilme") {
         return movie[1];
-      } else if (this.state.perguntas[2] === "sinopsefilme") {
-        return movie[5];
       } else {
+        console.log("else", this.state.perguntas[2]);
         return "t";
       }
     }
@@ -45,8 +57,9 @@ class Options extends Component {
           {this.state.movies.map((movie, index) => (
             <ButtonOptions
               key={movie}
-              classname="btn btn-op btn-lg"
+              classname="btn btn-op btn-lg "
               name=""
+              getOp={this.pegaStrResposta}
               index={index}
               isActive={this.state.activeIndex === index}
               onClick={this.handleClick}

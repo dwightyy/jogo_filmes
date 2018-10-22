@@ -8,11 +8,19 @@ import Options from "../options";
 class Questoes extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       movies: [],
-      perguntas: []
+      perguntas: [],
+      respSelecionada: {},
+      respostaAtual: [],
+      score: 0,
+      currentQuestion: 0
     };
+    this.proximaPergunta = this.proximaPergunta.bind(this);
+    this.respostaSelecionada = this.respostaSelecionada.bind(this);
   }
+
   shuffleArray(array) {
     var currentIndex = array.length,
       temporaryValue,
@@ -44,11 +52,12 @@ class Questoes extends Component {
         movie[1],
         "nomefilme"
       ],
-      [
-        `A sinopse  '${movie[5]}'  é de um filme que foi lançado em qual ano? `,
-        movie[2],
-        "sinopsefilme"
-      ],
+
+      // [
+      //   `A sinopse  '${movie[5]}'  é de um filme que foi lançado em qual ano? `,
+      //   movie[2],
+      //   "sinopsefilme"
+      // ]
       [
         `Em qual ano foi lançado o filme do diretor, '${movie[3]}'?`,
         movie[2],
@@ -76,8 +85,43 @@ class Questoes extends Component {
     });
   }
 
+  respostaSelecionada(activeIndex, perguntas, currentSelected) {
+    this.setState({
+      respSelecionada: activeIndex,
+      respostaAtual: perguntas,
+      slecion: currentSelected
+    });
+  }
+
+  proximaPergunta() {
+    if (this.state.respSelecionada) {
+      if (this.checkCorrect(this.state.respostaAtual[1], this.state.slecion)) {
+        let pontuacaoAtual = this.state.score;
+        this.setState({ score: pontuacaoAtual + 1 });
+      }
+      let questaoAtual = this.state.currentQuestion;
+      this.setState({ currentQuestion: questaoAtual + 1 });
+    }
+  }
+  checkCorrect(respostaAtual, respostaSelecionada) {
+    return respostaAtual == respostaSelecionada;
+  }
+  novaPergunta() {}
+
   render() {
     if (this.state.perguntas[0]) {
+      let perguntasErespostas = [];
+      let categoria = this.state.perguntas[this.state.currentQuestion][2];
+      for (let i of this.state.movies) {
+        if (categoria == "anofilme") {
+          perguntasErespostas = [
+            this.state.perguntas[this.state.currentQuestion][0],
+            this.state.movies[0]
+          ];
+          console.log(perguntasErespostas);
+        }
+      }
+
       var filmesEPerguntas = [this.state.perguntas[0], this.state.movies];
       return (
         <div>
@@ -85,11 +129,21 @@ class Questoes extends Component {
             <QuestionCounter />
           </div>
           <div className="text-center row col-4 offset-4">
-            <Paragraph paragraph={this.state.perguntas[0][0]} />
+            <Paragraph
+              paragraph={this.state.perguntas[this.state.currentQuestion][0]}
+            />
           </div>
           <div className="row col-4 offset-4">
-            <Options movies={filmesEPerguntas} />
+            <Options
+              novaPergunta={this.novaPergunta}
+              getResposta={this.respostaSelecionada}
+              movies={filmesEPerguntas}
+            />
           </div>
+          <div className="row col-4 my-5 offset-4">
+            <Button click={this.proximaPergunta} text={"Proxima pergunta"} />
+          </div>
+
           <div id="btnEncerrar" className="row col-2 offset-10">
             <Link to="/pontuacao">
               <Button classname="btn " text="Encerrar partida" />

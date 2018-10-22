@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 
 class ButtonOptions extends Component {
-  handleClick = () => this.props.onClick(this.props.index);
+  handleClick = () => {
+    this.props.onClick(this.props.index);
+    this.props.getOp(this.props.text);
+  };
   state = {
     classname: this.props.classname
   };
