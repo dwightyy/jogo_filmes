@@ -6,7 +6,7 @@ class CardFilme extends Component {
   render() {
     return (
       <div className="card col-2 offset-1">
-        <img className="card-img-top" src={Placeholder} alt="Card image cap" />
+        <img className="card-img-top" src={Placeholder} alt="Card" />
         <div className="card-body">
           <h4 className="card-title">{this.props.titulo}</h4>
           <hr />

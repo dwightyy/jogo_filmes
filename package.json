@@ -6,6 +6,7 @@
     "bootstrap": "^4.1.1",
     "jquery": "^3.3.1",
     "js-cookie": "^2.2.0",
+    "pretty-ms": "^4.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-modal": "^3.6.1",

@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import Button from "../button";
 import Card from "../card";
+import Timer from "../timer";
 var { film } = require("../filmes");
 
 class Filmes extends Component {
@@ -11,7 +12,8 @@ class Filmes extends Component {
       selectedGenres: this.props.location.state.generos,
       selectedDifficulty: this.props.location.state.dificuldade,
       moviesByGenre: null,
-      finalMovies: []
+      finalMovies: [],
+      timer: null
     };
     this.componentDidMount = this.componentDidMount.bind(this);
   }
@@ -60,11 +62,31 @@ class Filmes extends Component {
       this.setState({ finalMovies: movies });
     });
   }
+
   render() {
+    if (this.state.timer === "end") {
+      return (
+        <Redirect
+          to={{
+            pathname: "/questoes",
+            state: { finalMovies: this.state.finalMovies }
+          }}
+        />
+      );
+    }
+    const finzaliza = () => {
+      this.setState({ timer: "end" });
+    };
     return (
       <div>
         <div className="col-12 text-center">
-          <h1>Tempo restante: 99:99</h1>
+          <h1>
+            <Timer
+              dificuldade={this.state.selectedDifficulty}
+              callbackFinalizado={finzaliza}
+            />
+          </h1>
+          <button onClick={finzaliza} />
         </div>
         <div className="">
           <div className="d-flex text-center justify-content-center ">

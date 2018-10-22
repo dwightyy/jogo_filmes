@@ -3,6 +3,7 @@ import Button from "../button";
 import CheckboxList from "../checkbox-list";
 import RadioList from "../radio-list";
 import { Link } from "react-router-dom";
+import { Prompt } from "react-router";
 
 class Inicio extends Component {
   constructor(props) {
@@ -27,6 +28,15 @@ class Inicio extends Component {
       console.log(this.state.selectedGenres);
     });
   }
+  // confirmaInicio(event) {
+  //   console.log(event);
+  //   let c = window.confirm("Deseja realmente começar?");
+  //   if (c) {
+  //     console.log("começou");
+  //   } else {
+  //     console.log("cancelou");
+  //   }
+  // }
   render() {
     return (
       <div>
@@ -45,6 +55,10 @@ class Inicio extends Component {
               }
             }}
           >
+            <Prompt
+              when={this.componentWillUnmount}
+              message="Deseja começar a partida?"
+            />
             <Button text={"Começar Partida"} />
           </Link>
         </div>

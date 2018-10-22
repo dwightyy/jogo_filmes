@@ -61,3 +61,6 @@ h5 p {
   font-weight: 100;
   font-size: 15px;
 }
+.cardBlurred {
+  filter: blur(1.5rem);
+}
