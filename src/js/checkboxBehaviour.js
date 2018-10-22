@@ -1,4 +1,3 @@
-//TODO Perde o estado quando volta a pagina
 // console.log("loaded");
 // const $ = require("jquery");
 

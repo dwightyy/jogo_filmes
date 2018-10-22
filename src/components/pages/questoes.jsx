@@ -22,7 +22,7 @@ class Questoes extends Component {
         <div className="row col-4 offset-4">
           <Options />
         </div>
-        <div id="btnEncerrar" className="row col-4 offset-10">
+        <div id="btnEncerrar" className="row col-2 offset-10">
           <Link to="/pontuacao">
             <Button classname="btn " text="Encerrar partida" />
           </Link>

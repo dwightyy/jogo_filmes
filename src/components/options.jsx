@@ -4,13 +4,14 @@ import ButtonOptions from "./buttonOptions";
 class Options extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      style: {
+        target: null,
+        style: { backgroundColor: "red" }
+      }
+    };
   }
-  state = {
-    style: {
-      target: null,
-      style: { backgroundColor: "red" }
-    }
-  };
+
   handleClick = index => this.setState({ activeIndex: index });
   render() {
     return (

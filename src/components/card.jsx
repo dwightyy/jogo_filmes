@@ -8,11 +8,32 @@ class CardFilme extends Component {
       <div className="card col-2 offset-1">
         <img className="card-img-top" src={Placeholder} alt="Card image cap" />
         <div className="card-body">
-          <h5 className="card-title">{this.props.nomeFilme}</h5>
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+          <h4 className="card-title">{this.props.titulo}</h4>
+          <hr />
+          <h5>
+            Genero:&nbsp;
+            <span>{this.props.genero}</span>
+            <hr />
+          </h5>
+          <h5>
+            Ano:&nbsp;
+            <span>{this.props.ano}</span>
+            <hr />
+          </h5>
+          <h5>
+            Diretor:&nbsp;
+            <span>{this.props.diretor}</span>
+            <hr />
+          </h5>
+          <h5>
+            Ator:&nbsp;
+            <span>{this.props.ator}</span>
+            <hr />
+          </h5>
+          <h5>
+            Sinopse:&nbsp;
+            <p className="card-text">{this.props.sinopse}</p>
+          </h5>
         </div>
       </div>
     );

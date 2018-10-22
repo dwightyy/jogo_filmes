@@ -3,38 +3,29 @@ import Button from "../button";
 import CheckboxList from "../checkbox-list";
 import RadioList from "../radio-list";
 import { Link } from "react-router-dom";
-import Cookies from "js-cookie";
 
 class Inicio extends Component {
   constructor(props) {
     super(props);
-    this.gravaCookie = this.gravaCookie.bind(this);
-  }
-  state = {
-    generos: ["Terror", "Drama", "Ficção Cientifica", "Ação", "Romance"],
-    dificuldades: ["Fácil", "Médio", "Difícil"],
-    dific: "vazio"
-  };
-  getDificuldade = dificu => {
-    this.setState({ dific: dificu });
-    console.log("chamou", dificu, this.state.dific);
-  };
 
-  componentDidMount() {
-    console.log(document.querySelector('input[name="dificuldade"]'));
+    this.state = {
+      generos: ["Terror", "Romance", "Ficção Cientifica", "Drama", "Ação"],
+      dificuldades: ["Fácil", "Médio", "Difícil"],
+      selectedDifficulty: null,
+      selectedGenres: []
+    };
+    this.getSelectedDifficulty = this.getSelectedDifficulty.bind(this);
+    this.getSelectedGenres = this.getSelectedGenres.bind(this);
   }
-  componentWillUnmount() {
-    this.getd();
+  getSelectedDifficulty(newDifficulty) {
+    this.setState({ selectedDifficulty: newDifficulty }, () => {
+      console.log(this.state.selectedDifficulty);
+    });
   }
-
-  getd() {
-    return this.state.dific;
-  }
-
-  gravaCookie() {
-    console.log(this.state.dific, "#");
-    Cookies.set("dificuldade", this.state.dific);
-    console.log(Cookies.get("dificuldade"));
+  getSelectedGenres(genres) {
+    this.setState({ selectedGenres: genres }, () => {
+      console.log(this.state.selectedGenres);
+    });
   }
   render() {
     return (
@@ -49,22 +40,26 @@ class Inicio extends Component {
             to={{
               pathname: "/filmes",
               state: {
-                dificuldade: this.state.dific
+                dificuldade: this.state.selectedDifficulty,
+                generos: this.state.selectedGenres
               }
             }}
           >
-            <Button click={this.gravaCookie} text={"Começar Partida"} />
+            <Button text={"Começar Partida"} />
           </Link>
         </div>
         <div className="align-self-center row">
           <div className="col-1 offset-5">
             <RadioList
-              callback={this.getDificuldade}
+              getSelectedDifficulty={this.getSelectedDifficulty}
               dificuldades={this.state.dificuldades}
             />
           </div>
           <div className="col-2 ">
-            <CheckboxList generos={this.state.generos} />
+            <CheckboxList
+              getSelectedGenres={this.getSelectedGenres}
+              generos={this.state.generos}
+            />
           </div>
         </div>
       </div>

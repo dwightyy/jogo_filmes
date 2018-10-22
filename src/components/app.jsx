@@ -5,7 +5,6 @@ import Inicio from "./pages/inicio";
 import Filmes from "./pages/filmes";
 import Questoes from "./pages/questoes";
 import Pontuacao from "./pages/pontuacao";
-
 class App extends Component {
   state = {};
   render() {

@@ -1,24 +1,18 @@
 import React, { Component } from "react";
 
 class RadioList extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.handleChange = this.handleChange.bind(this);
+    this.state = {
+      dific: null
+    };
   }
-
   handleChange(event) {
-    this.setState({
-      dific: document.querySelector('input[name="dificuldade"]:checked').value
+    this.setState({ dific: event.target.value }, () => {
+      this.props.getSelectedDifficulty(this.state.dific);
     });
-    this.setState({
-      dific: event.target.value
-    });
-    this.props.callback(this.state.dific);
   }
-
-  state = {
-    dific: "test"
-  };
   render() {
     return (
       <div className="form-check">

@@ -28,7 +28,7 @@ body {
 }
 
 #btnEncerrar {
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 .active {
@@ -40,4 +40,24 @@ body {
 }
 .btn-op {
   margin-top: 10% !important;
+}
+
+.card {
+  margin-left: 2% !important;
+  font-size: 15px;
+  max-height: 960px;
+}
+hr {
+  margin-top: 5px;
+}
+h5 {
+  font-weight: 600;
+  font-size: 17px;
+}
+span {
+  font-weight: 100;
+}
+h5 p {
+  font-weight: 100;
+  font-size: 15px;
 }
