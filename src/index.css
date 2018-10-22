@@ -5,6 +5,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
+  background-color: rgb(30, 37, 45);
+ 	color: #9ab;
 }
 
 .paragraph-div {
@@ -60,4 +62,11 @@ h5 p {
 }
 .cardBlurred {
   filter: blur(1.5rem);
+}
+
+#title-header { 
+  background-color: rgb(21 , 24, 29);
+  color: rgb(188, 187, 184);
+  height: 100px;
+  font-size: 3em;
 }

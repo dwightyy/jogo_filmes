@@ -77,6 +77,7 @@ class Filmes extends Component {
     const finzaliza = () => {
       this.setState({ timer: "end" });
     };
+    console.log(this.state.finalMovies[0])
     return (
       <div>
         <div className="col-12 text-center">
@@ -100,6 +101,7 @@ class Filmes extends Component {
                 diretor={movie[3]}
                 ator={movie[4]}
                 sinopse={movie[5]}
+                imagem={movie[6]}
               />
             ))}
           </div>

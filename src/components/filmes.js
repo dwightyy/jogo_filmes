@@ -7,6 +7,7 @@ var film = [
       "Stanley Kubrick",
       "Jack Nicholson",
       "Jack Torrance se torna caseiro de inverno do isolado Hotel Overlook, nas montanhas do Colorado, na esperança de curar seu bloqueio de escritor. Ele se instala com a esposa Wendy e o filho Danny, que é atormentando por premonições. Jack não consegue escrever e as visões de Danny se tornam mais perturbadoras. O escritor descobre os segredos sombrios do hotel e começa a se transformar em um maníaco homicida, aterrorizando sua família."
+      , "../assets/oiluminado.jpg"
     ],
     [
       "Terror",
@@ -15,6 +16,7 @@ var film = [
       "Ridley Scott",
       "Sigourney Weaver",
       "Uma nave espacial, ao retornar para Terra, recebe estranhos sinais vindos de um asteroide. Enquanto a equipe investiga o local, um dos tripulantes é atacado por um misterioso ser. O que parecia ser um ataque isolado se transforma em um terror constante, pois o tripulante atacado levou para dentro da nave o embrião de um alienígena, que não para de crescer e tem como meta matar toda a tripulação."
+      , "../assets/alien.jpg"
     ],
     [
       "Terror",
@@ -23,6 +25,7 @@ var film = [
       "Alfre Hitchcok",
       "Anthony Perkins",
       "Após roubar 40 mil dólares para se casar com o namorado, uma mulher foge durante uma tempestade e decide passar a noite em um hotel que encontra pelo caminho. Ela conhece o educado e nervoso proprietário do estabelecimento, Norman Bates, um jovem com um interesse em taxidermia e com uma relação conturbada com sua mãe. O que parece ser uma simples estadia no local se torna uma verdadeira noite de terror."
+      , "../assets/psicose.jpg"
     ],
     [
       "Terror",
@@ -31,6 +34,7 @@ var film = [
       "Roman Polanski",
       "Mia Farrow",
       "Um casal se muda para um prédio com pessoas estranhas. Acontecimentos ainda mais estranhos levam a jovem, que está grávida, a duvidar de sua própria sanidade. Porém, o parto e a descoberta de uma seita diabólica irão finalmente mostrar a verdade."
+      , "../assets/obebederosemary.jpeg"
     ],
     [
       "Terror",
@@ -39,6 +43,7 @@ var film = [
       "James Wan",
       "Cary Elwes",
       "Dois homens acordam acorrentados em um banheiro como prisioneiros de um assassino em série que leva suas vítimas a situações limítrofes em um jogo macabro. Para sobreviver, eles terão de desvendar juntos as peças desse quebra-cabeças doentio."
+      , "../assets/jogosmortais.jpg"
     ],
     [
       "Terror",
@@ -47,6 +52,7 @@ var film = [
       "Jordan Peele",
       "Deniel Kaluuya",
       "Um jovem fotógrafo descobre um segredo sombrio quando conhece os pais aparentemente amigáveis da sua namorada."
+      , "../assets/corra.jpg"
     ],
     [
       "Terror",
@@ -55,6 +61,7 @@ var film = [
       "Danny Boyle",
       "Cillian Murphy",
       "Uma praga transforma a maioria da humanidade em zumbis sedentos de sangue. Um grupo ainda não afetado se prepara para a mais perigosa jornada de suas vidas: tentar chegar a uma fortaleza militar em Manchester."
+      , "../assets/exterminio.jpg"
     ],
     [
       "Terror",
@@ -63,6 +70,7 @@ var film = [
       "William Friedkin",
       "Ellen Burstyn",
       "Uma atriz vai gradativamente tomando consciência de que a sua filha de doze anos está tendo um comportamento completamente assustador. Deste modo, ela pede ajuda a um padre, que também é um psiquiatra, e este chega a conclusão de que a garota está possuída pelo demônio. Ele solicita então a ajuda de um segundo sacerdote, especialista em exorcismo, para tentar livrar a menina desta terrível possessão."
+      , "../assets/oexorcista.jpg"
     ],
     [
       "Terror",
@@ -71,6 +79,7 @@ var film = [
       "Andy Muschietti",
       "Bill Skarsgard",
       "Crianças começam a desaparecer na cidade de Derry, no Maine, e alguns amigos do mesmo bairro se unem para enfrentar Pennywise, um palhaço malvado cuja história de assassinato e violência remonta a séculos."
+      , "../assets/it.jpg"
     ],
     [
       "Terror",
@@ -79,6 +88,7 @@ var film = [
       "Gore Verbinski",
       "Naomi Watts",
       "A jornalista Rachel Keller decide investigar a morte de sua sobrinha e descobre que quatro adolescentes morreram misteriosamente sete dias depois de assistir a um vídeo com imagens assustadoras. Agora ela tenta solucionar o mistério e impedir que a profecia se realize, já que ela e seu filho também assistiram ao vídeo."
+      , "../assets/ochamado.jpg"
     ],
     [
       "Terror",
@@ -87,6 +97,7 @@ var film = [
       "Wes Craven",
       "Neve Camplbell",
       "Um grupo de jovens enfrenta um assassino mascarado que testa seus conhecimentos sobre filmes de terror. A pequena cidade de Woodsboro nunca mais será a mesma."
+      , "../assets/panico.jpg"
     ],
     [
       "Terror",
@@ -95,6 +106,7 @@ var film = [
       "Jennifer Kent",
       "Essie Davis",
       "Amelia, viúva e ainda atormentada pela violenta morte do marido, tenta lidar com o medo de monstros que aterroriza seu único filho, o pequeno rebelde Samuel, e enfrenta dificuldades em amar o garoto. Após encontrar um misterioso livro, o menino, certo de que há um monstro que deseja matá-lo, começa a agir irracionalmente para o desespero de sua mãe. Mas logo Amelia percebe que realmente há uma sinistra presença na casa e ao redor deles."
+      , "../assets/obabadook.jpg"
     ],
     [
       "Terror",
@@ -103,6 +115,7 @@ var film = [
       "John Krasinski",
       "Emily Blunt",
       "Em uma fazenda nos Estados Unidos, uma família do Meio-Oeste é perseguida por uma entidade fantasmagórica assustadora. Para se protegerem, eles devem permanecer em silêncio absoluto, a qualquer custo, pois o perigo é ativado pela percepção do som."
+      , "../assets/umlugarsilencioso.jpg"
     ],
     [
       "Terror",
@@ -111,6 +124,7 @@ var film = [
       "Stephen Norrington",
       "Wesley Snipes",
       "O herói Blade , metade mortal e metade imortal, parte em busca do vampiro responsável pela morte de sua mãe. Blade quer eliminá-lo do mundo dos vampiros e em um mundo tecnologicamente avançado, Blade lutará para capturar aquele que quer destruir a vida humana."
+      , "../assets/blade.jpg"
     ],
     [
       "Terror",
@@ -119,6 +133,7 @@ var film = [
       "Daniel Myrick",
       "Heather Donahue",
       "Um grupo de três jovens cineastas desaparece ao entrar em uma floresta de Maryland para gravar um documentário sobre uma lenda local conhecida como A Bruxa de Blair. Anos depois, a câmera que usavam é encontrada."
+      , "../assets/abruxadeblair.jpg"
     ],
     [
       "Terror",
@@ -127,6 +142,7 @@ var film = [
       "James Wong",
       "Devon Sawa",
       "Alex Browning está embarcando em uma viagem para Paris. Alex sofre uma premonição, pela qual vê o avião explodir momentos depois de sair do chão. Alex insiste que todo mundo saia do avião e sete pessoas, incluindo Alex, são obrigados a desembarcar. Todos veem quando o avião realmente explode como uma bola de fogo. Ele e os outros sobreviventes brevemente enganam a morte, mas não serão capazes de evitar o seu destino por muito tempo. Um a um, esses fugitivos de destino viram vítimas da morte."
+      , "../assets/premonicao.jpg"
     ],
     [
       "Terror",
@@ -135,6 +151,7 @@ var film = [
       "Oren Peli",
       "Katie Featherston",
       "Paranormal Activity é uma série de filmes de terror sobrenatural americana que consiste em seis filmes. Criado por Oren Peli, o filme original foi lançado em 2007."
+      , "../assets/atividadeparanormal.jpg"
     ],
     [
       "Terror",
@@ -143,6 +160,7 @@ var film = [
       "John Carpenter",
       "Donald Pleasence",
       "Um maníaco retorna à sua cidade natal para continuar o terror que ele começou há quinze anos."
+      , "../assets/halloween.jpg"
     ],
     [
       "Terror",
@@ -151,6 +169,7 @@ var film = [
       "Wes Craven",
       "Heather Langenkamp",
       "Um grupo de adolescentes tem pesadelos horríveis, em que são atacados por um homem deformado com garras de aço. Ele apenas aparece durante o sono e, para escapar, é preciso acordar. Os crimes vão ocorrendo seguidamente, até que se descobre que o ser misterioso é na verdade Freddy Krueger, um homem que molestou crianças na rua Elm e que foi queimado vivo pela vizinhança. Agora, Krueger pode ter retornado para se vingar daqueles que o mataram, através do sono."
+      , "../assets/ahoradopesadelo.jpg"
     ],
     [
       "Terror",
@@ -159,6 +178,7 @@ var film = [
       "Jaume Collet-Serra",
       "Vera Farmiga",
       "Uma série de eventos alarmantes faz com que uma mulher acredite que algum mal esteja por trás do rosto angelical da filha de nove anos, recentemente adotada."
+      , "../assets/aorfa.jpg"
     ]
   ],
   [
@@ -169,6 +189,7 @@ var film = [
       "Michel Gondry",
       "Jim Carrey",
       "Joel se surpreende ao saber que seu amor verdadeiro, Clementine, o apagou completamente de sua memória. Ele decide fazer o mesmo, mas muda de ideia. Preso dentro da própria mente enquanto os especialistas se mantêm ocupados em seu apartamento, Joel precisa avisá-los para parar."
+      , ".../assets/oiluminado.jpg"
     ],
     [
       "Romance",
@@ -177,6 +198,7 @@ var film = [
       "David O. Russell",
       "Bradley Cooper",
       "Depois de uma fase difícil de sua vida, Pat Solitano Jr. está disposto a seguir em frente e reconquistar sua ex-mulher. Através de amigos, ele conhece Tiffany, que lhe promete ajuda na tarefa da reconquista. Uma inesperada ligação começa a uni-los."
+      , ".../assets/oiluminado.jpg"
     ],
     [
       "Romance",
@@ -185,6 +207,7 @@ var film = [
       "James Cameron",
       "Leonardo DiCaprio",
       "Um artista pobre e uma jovem rica se conhecem e se apaixonam na fatídica jornada do Titanic, em 1912. Embora esteja noiva do arrogante herdeiro de uma siderúrgica, a jovem desafia sua família e amigos em busca do verdadeiro amor."
+      , ".../assets/oiluminado.jpg"
     ],
     [
       "Romance",

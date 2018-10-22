@@ -3,6 +3,8 @@ import Button from "../button";
 import Title from "../title";
 import Paragraph from "../paragraph";
 import { Link } from "react-router-dom";
+import Header from "../header";
+
 class TelaInicial extends Component {
   state = {
     instrucoes:
@@ -11,6 +13,9 @@ class TelaInicial extends Component {
   render() {
     return (
       <div>
+        <div className="container col-12" id="title-header">
+          <Header alignment={"text-center"} header={"MemoMovie"} />
+        </div>
         <div className="row">
           <div className="col-6 offset-md-1">
             <Title alignment={"text-center"} title={"Instruções"} />
