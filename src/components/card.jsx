@@ -1,20 +1,15 @@
 import React, { Component } from "react";
+var images = require.context('../assets', true);
 
 class CardFilme extends Component {
-  componentDidMount() {
-    var req = require.context("../assets", false, /.*\.jpg$/);
-    req.keys().forEach(function (key) {
-      req(key);
-    });
-    console.log(req)
-  }
-
   state = {};
   render() {
 
+    let img_src = images(`${this.props.imagem}`)
+
     return (
       <div className="card col-2 offset-1">
-        <img className="card-img-top" src={this.props.image} alt="Card" />
+        <img className="card-img-top" src={img_src} alt="Card" />
         <div className="card-body">
           <h4 className="card-title">{this.props.titulo}</h4>
           <hr />

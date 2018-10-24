@@ -77,7 +77,7 @@ class Filmes extends Component {
     const finzaliza = () => {
       this.setState({ timer: "end" });
     };
-    console.log(this.state.finalMovies[0])
+
     return (
       <div>
         <div className="col-12 text-center">
@@ -86,7 +86,7 @@ class Filmes extends Component {
               dificuldade={this.state.selectedDifficulty}
               callbackFinalizado={finzaliza}
             />
-          </h1>          
+          </h1>
         </div>
         <div className="">
           <div className="d-flex text-center justify-content-center ">

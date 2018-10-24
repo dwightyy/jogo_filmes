@@ -42,7 +42,7 @@ class Timer extends Component {
   }
   actual() {
     let dificuldade = this.props.dificuldade;
-    if (dificuldade === "Fácil" && this.state.time > 3000) {
+    if (dificuldade === "Fácil" && this.state.time > 300000) {
       this.props.callbackFinalizado();
     } else if (dificuldade === "Médio" && this.state.time > 4000) {
       this.props.callbackFinalizado();

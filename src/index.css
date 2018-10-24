@@ -27,6 +27,9 @@ body {
 .card {
   margin-top: 1%;
   border: 2px solid rgba(0, 0, 0, 0.5);
+  margin-left: 2% !important;
+  font-size: 15px;
+  max-height: 960px;
 }
 
 #btnEncerrar {
@@ -41,11 +44,6 @@ body {
   margin-top: 10% !important;
 }
 
-.card {
-  margin-left: 2% !important;
-  font-size: 15px;
-  max-height: 960px;
-}
 hr {
   margin-top: 5px;
 }
