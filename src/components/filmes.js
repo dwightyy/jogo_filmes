@@ -133,7 +133,7 @@ var film = [
       "Daniel Myrick",
       "Heather Donahue",
       "Um grupo de três jovens cineastas desaparece ao entrar em uma floresta de Maryland para gravar um documentário sobre uma lenda local conhecida como A Bruxa de Blair. Anos depois, a câmera que usavam é encontrada."
-      , "./A_Bruxa_de_Blair.jpg"
+      , "./A_Bruxa_De_Blair.jpg"
     ],
     [
       "Terror",
@@ -189,7 +189,7 @@ var film = [
       "Michel Gondry",
       "Jim Carrey",
       "Joel se surpreende ao saber que seu amor verdadeiro, Clementine, o apagou completamente de sua memória. Ele decide fazer o mesmo, mas muda de ideia. Preso dentro da própria mente enquanto os especialistas se mantêm ocupados em seu apartamento, Joel precisa avisá-los para parar."
-      , "./O_Brilho_Eterno_de_uma_Mente_Sem_Lembrança.jpg"
+      , "./O_Brilho_Eterno_de_uma_Mente_Sem_Lembranca.jpg"
     ],
     [
       "Romance",
@@ -324,7 +324,7 @@ var film = [
       "Gil Junger",
       "Heath Ledger",
       "Bianca Stratford é bonita e popular, mas não pode namorar antes de sua irmã mais velha. O problema é que nenhum garoto consegue chegar perto da irmã, Kat Stratford. Para resolver a situação, um rapaz interessado em Bianca suborna um amigo com passado misterioso para sair com Kat e, quem sabe, tentar conquistá-la."
-      , "./10_Coisas_que_Eu_Odeio_em_Você.jpg"
+      , "./10_Coisas_que_Eu_Odeio_em_Voce.jpg"
     ],
     [
       "Romance",
@@ -406,8 +406,8 @@ var film = [
       1977,
       "George Lucas",
       "Mark Hamill",
-      ""
-      , "./Star_Wars_Episódio_IV_Uma_Nova_Esperança.jpg"
+      "A princesa Leia é mantida refém pelas forças imperiais comandadas por Darth Vader. Luke Skywalker e o capitão Han Solo precisam libertá-la e restaurar a liberdade e a justiça na galáxia."
+      , "./Star_Wars_Episodio_IV_Uma_Nova_Esperanca.jpg"
     ],
     [
       "Ficção Cientifica",
@@ -425,7 +425,7 @@ var film = [
       "George Miller",
       "Tom Hardy",
       "Em um mundo apocalíptico, Max Rockatansky acredita que a melhor forma de sobreviver é não depender de ninguém. Porém, após ser capturado pelo tirano Immortan Joe e seus rebeldes, Max se vê no meio de uma guerra mortal, iniciada pela imperatriz Furiosa que tenta salvar um grupo de garotas. Também tentando fugir, Max aceita ajudar Furiosa. Dessa vez, o tirano Joe está ainda mais implacável pois teve algo insubstituível roubado."
-      , "./Mad_Max_Estrada_da_Fúria.jpg"
+      , "./Mad_Max_Estrada_da_Furia.jpg"
     ],
     [
       "Ficção Cientifica",
@@ -497,7 +497,7 @@ var film = [
       "Doug Liman",
       "Tom Cruise",
       "Quando a Terra é tomada por alienígenas, Bill Cage , relações públicas das Forças Armadas dos Estados Unidos, é obrigado a ir para a linha de frente no dia do confronto final. Inexplicavelmente ele acaba preso no tempo, condenado a reviver esta data repetidamente. A cada morte e renascimento, Cage avança e, antecipando os acontecimentos, tem a chance de mudar o curso da batalha com o apoio da guerreira Rita Vrataski."
-      , "./No_Limite_do_Amanhã.jpg"
+      , "./No_Limite_do_Amanha.jpg"
     ],
     [
       "Ficção Cientifica",
@@ -506,7 +506,7 @@ var film = [
       "Stanley Kubrick",
       "Keir Dullea",
       "Desde a “Aurora do Homem”, um misterioso monólito negro parece emitir sinais de outra civilização interferindo no nosso planeta. Quatro milhões de anos depois, no século XXI, uma equipe de astronautas liderados pelo experiente David Bowman e Frank Poole é enviada a Júpiter para investigar o enigmático monólito na nave Discovery, totalmente controlada pelo computador HAL 9000."
-      , "./2001_Uma_Odisséia_no_Espaço.jpg"
+      , "./2001_Uma_Odisseia_no_Espaco.jpg"
     ],
     [
       "Ficção Cientifica",
@@ -514,7 +514,7 @@ var film = [
       2011,
       "Neil Burger",
       "Bradley Cooper",
-      "Há anos o escritor Eddie Morra  está sofrendo um bloqueio criativo. Quando um velho amigo lhe apresenta um remédio revolucionário, sua vida muda instantaneamente. Com o remédio, Eddie passa a usar 100% do seu cérebro. Ele consegue lembrar de tudo que já leu, ouviu ou viu em toda sua vida. Aprende línguas, faz cálculos, consegue ler e escrever muito rapidamente. Porém, para que tudo isto ocorra, ele precisa tomar o remédio todo dia. Em poucas semanas Eddie vira o rei de Wall Street chamando a atenção do mega empresário Carl Van Loon que o contrata para fechar um dos maiores negócios da história. Tendo se tornado uma pessoa perfeita, ele agora passará a viver sem limites."
+      "Encarando o desemprego e a rejeição de sua namorada, o escritor Eddie Morra tem certeza que não tem mais futuro. Mas tudo muda quando um velho amigo lhe dá uma droga que melhora as habilidades mentais. Viciado nesta química ainda não testada, Eddie chega ao topo do mundo financeiro e chama a atenção de um magnata que pretende usá-lo para fazer fortuna. Mas terríveis efeitos colaterais e a diminuição do estoque da droga ameaçam o colapso de Eddie."
       , "./Sem_Limites.jpg"
     ],
     [
@@ -541,8 +541,8 @@ var film = [
       2006,
       "Alfonso Cuarón",
       "Clive Owen",
-      "2027. Não se sabe o motivo, mas as mulheres não conseguem mais engravidar. O mais novo ser humano morreu aos 18 anos e a humanidade discute seriamente a possibilidade de extinção. Thelonius Faron é um ex-ativista desiludido que se tornou um burocrata e que vive em uma Londres arrasada pela violência e pelas seitas nacionalistas em guerra. Procurado por sua ex-esposa Julian, Theodore é apresentado a uma jovem que misteriosamente está grávida. Eles passam a protegê-la a qualquer custo, por acreditar que a criança por vir seja a salvação da humanidade."
-      , "./Filhos_da_Esperança.jpg"
+      "No ano de 2027, a infertilidade é uma ameaça real para a civilização, e o último humano a nascer em anos acaba de morrer. Frente a um cenário pessimista sobre o futuro, um burocrata desiludido se torna o herói improvável que pode salvar a humanidade. Para isso, ele enfrenta seus próprios demônios e tenta proteger a última esperança do planeta: uma jovem mulher milagrosamente grávida, descoberta pela ativista inteligente com quem fora casado."
+      , "./Filhos_da_Esperanca.jpg"
     ]
   ],
   [
@@ -553,7 +553,7 @@ var film = [
       "Frank Darabont",
       "Tim Robbins",
       "Andy Dufresne é condenado a duas prisões perpétuas consecutivas pelas mortes de sua esposa e de seu amante. Porém, só Andy sabe que ele não cometeu os crimes. No presídio, durante dezenove anos, ele faz amizade com Red, sofre as brutalidades da vida na cadeia, se adapta, ajuda os carcereiros, etc."
-      , "./umsonhodeliberdade.jpg"
+      , "./Um_Sonho_de_Liberdade.jpg"
     ],
     [
       "Drama",
@@ -562,7 +562,7 @@ var film = [
       "David Fincher",
       "Brad Pitt",
       "Um homem deprimido que sofre de insônia conhece um estranho vendedor chamado Tyler Durden e se vê morando em uma casa suja depois que seu perfeito apartamento é destruído. A dupla forma um clube com regras rígidas onde homens lutam. A parceria perfeita é comprometida quando uma mulher, Marla, atrai a atenção de Tyler."
-      , "./clubedaluta.jpg"
+      , "./Clube_da_Luta.jpg"
     ],
     [
       "Drama",
@@ -571,7 +571,7 @@ var film = [
       "Quentin Tarantino",
       "John Travolta",
       "Os caminhos de vários criminosos se cruzam nestas três histórias de Quentin Tarantino. Um pistoleiro se apaixona pela mulher de seu chefe, um boxeador não se sai bem em uma luta e um casal tenta executar um plano de roubo que foge do controle."
-      , "./pulpfiction.jpg"
+      , "./Pulp_Fiction.jpg"
     ],
     [
       "Drama",
@@ -580,7 +580,7 @@ var film = [
       "Robert Zemeckis",
       "Tom Hanks",
       "Mesmo com o raciocínio lento, Forrest Gump nunca se sentiu desfavorecido. Graças ao apoio da mãe, ele teve uma vida normal. Seja no campo de futebol como um astro do esporte, lutando no Vietnã ou como capitão de um barco de camarão, Forrest inspira a todos com seu otimismo infantil. Mas a pessoa com quem Forrest mais se preocupa pode ser a mais difícil de salvar: seu amor de infância, a doce, mas perturbada Jenny."
-      , "./forrestgump.jpg"
+      , "./Forrest_Gump.jpg"
     ],
     [
       "Drama",
@@ -589,7 +589,7 @@ var film = [
       "Francis Ford Coppola",
       "Marlon Brando",
       "A saga conta a história de uma família mafiosa que luta para estabelecer sua supremacia na América depois da Segunda Guerra. Uma tentativa de assassinato deixa Vito Corleone incapacitado e força os filhos Michael e Sonny a assumirem os negócios."
-      , "./opoderosochefao.jpg"
+      , "./O_Poderoso_Chefao.jpg"
     ],
     [
       "Drama",
@@ -598,7 +598,7 @@ var film = [
       "Quentin Tarantino",
       "Brad Pitt",
       "Durante a Segunda Guerra Mundial, na França, um grupo de judeus americanos conhecidos como Bastardos espalha o terror entre o terceiro Reich. Ao mesmo tempo, Shosanna, uma judia que fugiu dos nazistas, planeja vingança quando um evento em seu cinema reunirá os líderes do partido."
-      , "./bastardosinglorios.jpg"
+      , "./Bastardos_Inglorios.jpg"
     ],
     [
       "Drama",
@@ -607,7 +607,7 @@ var film = [
       "Jonathan Demme",
       "Jodie Foster",
       "Clarice Starling, uma das melhores estudantes da academia de treinamento do FBI. Jack Crawford quer que Clarice entreviste o Dr. Hannibal Lecter, um psiquiatra brilhante e também um psicopata violento, que cumpre prisão perpétua por vários atos de assassinato e canibalismo. Crawford acredita que Lecter pode ter uma visão em um caso e que Starling, como uma mulher jovem e atraente, pode ser a isca para atraí-lo."
-      , "./osilenciodosinocentes.jpg"
+      , "./O_Silencio_dos_Inocentes.jpg"
     ],
     [
       "Drama",
@@ -616,7 +616,7 @@ var film = [
       "Steven Spielberg",
       "Matt Damon",
       "Ao desembarcar na Normandia, no dia 6 de junho de 1944, o Capitão Miller recebe a missão de comandar um grupo do Segundo Batalhão para o resgate do soldado James Ryan, o caçula de quatro irmãos, dentre os quais três morreram em combate. Por ordens do chefe George C. Marshall, eles precisam procurar o soldado e garantir o seu retorno, com vida, para casa."
-      , "./resgatedosoldadoryan.jpg"
+      , "./Resgate_do_Soldado_Ryan.jpg"
     ],
     [
       "Drama",
@@ -625,7 +625,7 @@ var film = [
       "Frank Darabont",
       "Tom Hanks",
       "Um carcereiro tem um relacionamento incomum e comovente com um preso que está no corredor na morte: Coffey, um negro enorme, condenado por ter matado brutalmente duas gêmeas de nove anos. Ele tem tamanho e força para matar qualquer um, mas seu comportamento é completamente oposto à sua aparência. Além de ser simples, ingênuo e ter pavor do escuro, ele possui um dom sobrenatural. Com o passar do tempo, o carcereiro aprende que, às vezes, os milagres acontecem nos lugares mais inesperados."
-      , "./aesperadeummilagra.jpg"
+      , "./A_Espera_de_um_Milagre.jpg"
     ],
     [
       "Drama",
@@ -634,7 +634,7 @@ var film = [
       "Sam Mendes",
       "Kevin Spacey",
       "Lester Burham não aguenta mais o emprego e se sente impotente perante sua vida. Desencantado com sua esposa Carolyn e pai da adolescente Jane, o melhor momento de seu dia é quando se masturba no chuveiro. Porém seus objetivos mudam quando conhece Angela Hayes, amiga de Jane. Encantado com sua beleza e disposto a dar a volta por cima, Lester pede demissão e começa a reconstruir sua vida com a ajuda de seu vizinho Ricky."
-      , "./belezaamericana.jpg"
+      , "./Beleza_Americana.jpg"
     ],
     [
       "Drama",
@@ -643,7 +643,7 @@ var film = [
       "Tony Kaye",
       "Edward Norton",
       "Vivendo uma vida marcada pela violência e racismo, o neonazista Derek Vinyard finalmente vai para a prisão depois de matar dois jovens negros que tentaram roubar seu carro. Após a sua libertação, Derek promete mudar seu jeito e espera evitar seu irmão mais novo, Danny, que idolatra Derek, de seguir os seus passos enquanto ele luta contra seus próprios preconceitos."
-      , "./umaoutrahistoriaamericana.jpg"
+      , "./Uma_Outra_Historia_Americana.jpg"
     ],
     [
       "Drama",
@@ -652,7 +652,7 @@ var film = [
       "Mel Gibson",
       "Mel Gibson",
       "A história de um herói escocês do século 13, chamado William Wallace, que lidera seus conterrâneos contra o monarca inglês Edward I, após ter sofrido uma tragédia pessoal causada pelos soldados ingleses. O exército amador de Wallace foi maior que o exército da Inglaterra."
-      , "./coracaovalente.jpg"
+      , "./Coracao_Valente.jpg"
     ],
     [
       "Drama",
@@ -661,7 +661,7 @@ var film = [
       "Milos Forman",
       "Jack Nicholson",
       "'Um Estranho no Ninho' é o segundo longa metragem filmado nos EUA por Milos Forman, adaptado do romance homônimo de Ken Kesey. Ambientado em uma clínica psiquiátrica, o filme conta a história de Randall McMurphy, um indivíduo de espírito livre que termina lá fugindo da prisão e lidera os pacientes em uma rebelião contra a equipe opressivai, chefiada pela enfermeira Ratched."
-      , "./umestranhononinho.jpg"
+      , "./Um_Estranho_no_Ninho.jpg"
     ],
     [
       "Drama",
@@ -670,7 +670,7 @@ var film = [
       "Ron Howard",
       "Russell Crowe",
       "John Forbes Nash Jr. é reconhecido como gênio da matemática aos 21 anos. Cedo, casa-se com uma bela mulher, mas logo começa a dar sinais de esquizofrenia. Após anos de luta contra a doença, ele acaba ganhando o prêmio Nobel."
-      , "./umamentebrilhante.jpg"
+      , "./Uma_Mente_Brilhante.jpg"
     ],
     [
       "Drama",
@@ -679,7 +679,7 @@ var film = [
       "Gus Van Sant",
       "Robin Williams",
       "Will é um rapaz brilhante e tem um grande talento para a matemática, mas trabalha como faxineiro em uma famosa universidade. O psicólogo Sean Maguire o ajuda a formar sua identidade e lidar com as emoções, direcionando-o na vida."
-      , "./ogenioindomavel.jpg"
+      , "./O_Genio_Indomavel.jpg"
     ],
     [
       "Drama",
@@ -688,7 +688,7 @@ var film = [
       "Darren Aronofsky",
       "Jared Leto",
       "Enquanto o filho lida com sua própria batalha contra as drogas, Sara é convidada para participar de seu programa de TV favorito. Para poder usar o vestido preferido, começa a tomar pílulas para emagrecer e fica viciada."
-      , "./raquiemparaumsonho.jpg"
+      , "./Requiem_para_um_Sonho.jpg"
     ],
     [
       "Drama",
@@ -697,7 +697,7 @@ var film = [
       "Darren Aronofsky",
       "Natalie Portman",
       "Nina é uma bailarina cuja obsessão pela dança supera todas as facetas de sua vida. Quando o diretor artístico da companhia decide substituir sua prima ballerina para a produção de estreia de 'O Lago dos Cisnes', Nina é sua primeira escolha. Sua concorrente é a novata Lily. Embora Nina seja perfeita para o papel do Cisne Branco, Lily personifica o Cisne Negro. A rivalidade entre as duas bailarinas se transforma em uma amizade distorcida e o lado obscuro de Nina começa a vir à tona."
-      , "./cisnenegro.jpg"
+      , "./Cisne_Negro.jpg"
     ],
     [
       "Drama",
@@ -706,7 +706,7 @@ var film = [
       "Martin Scorsese",
       "Robert De Niro",
       "O motorista de táxi de Nova York Travis Bickle reflete constantemente sobre a corrupção da vida ao seu redor e sente-se cada vez mais perturbado com a própria solidão e alienação. Em praticamente todas as fases de sua vida, Bickle permanece isolado e não consegue fazer contato emocional com ninguém. Incapaz de dormir noite após noite, o motorista frequenta os estabelecimentos de pornografia locais em busca de diversão."
-      , "./taxidriver.jpg"
+      , "./Taxi_Driver.jpg"
     ],
     [
       "Drama",
@@ -715,7 +715,7 @@ var film = [
       "Roman Polanski",
       "Adrien Brody",
       "Um pianista judeu polonês vê Varsóvia mudar gradualmente à medida que a Segunda Guerra Mundial começa. Szpilman é forçado a ir para o Gueto de Varsóvia, mas depois é separado de sua família durante a Operação Reinhard. A partir deste momento até que os prisioneiros dos campos de concentração sejam liberados, Szpilman se esconde em vários locais entre as ruínas de Varsóvia."
-      , "./opianista.jpg"
+      , "./O_Pianista.jpg"
     ],
     [
       "Drama",
@@ -724,7 +724,7 @@ var film = [
       "Wes Anderson",
       "Ralph Fiennes",
       "Na década de 1930, o gerente de um famoso hotel europeu torna-se muito amigo de um jovem companheiro de trabalho. Os dois acabam se envolvendo no roubo de um famoso quadro de valor inestimável e na batalha por uma fortuna de família. O filme mostra as mudanças históricas na Europa que ocorreram durante os anos 20."
-      , "./ograndehotelbudapeste.jpg"
+      , "./O_Grande_Hotel_Budapeste.jpg"
     ]
   ],
   [
@@ -735,7 +735,7 @@ var film = [
       "Christopher Nolan",
       "Christian Bale",
       "Após dois anos desde o surgimento do Batman , os criminosos de Gotham City têm muito o que temer. Com a ajuda do tenente James Gordon e do promotor público Harvey Dent, Batman luta contra o crime organizado. Acuados com o combate, os chefes do crime aceitam a proposta feita pelo Coringa e o contratam para combater o Homem-Morcego."
-      , "./ocavaleirodastrevas.jpg"
+      , "./O_Cavaleiro_das_Trevas.jpg"
     ],
     [
       "Ação",
@@ -744,7 +744,7 @@ var film = [
       "Peter Jackson",
       "Elijah Wood",
       "Sauron planeja um grande ataque a Minas Tirith, capital de Gondor, o que faz com que Gandalf e Pippin partam para o local na intenção de ajudar a resistência. Um exército é reunido por Theoden em Rohan, em mais uma tentativa de deter as forças de Sauron. Enquanto isso Frodo, Sam e Gollum seguem sua viagem rumo à Montanha da Perdição, para destruir o Um Anel."
-      , "./senhordosaneisoretornodorei.jpg"
+      , "./Senhor_dos_Aneis_O_Retorno_do_Rei.jpg"
     ],
     [
       "Ação",
@@ -753,7 +753,7 @@ var film = [
       "Joss Whedon",
       "Robert Downey Jr.",
       "Loki retorna à Terra enviado pelos chitauri, uma raça alienígena que pretende dominar os humanos. Com a promessa de que será o soberano do planeta, ele rouba o cubo mágico dentro de instalações da S.H.I.E.L.D. e, com isso, adquire grandes poderes. Loki os usa para controlar o dr. Erik Selvig e Clint Barton/Gavião Arqueiro, que passam a trabalhar para ele. No intuito de contê-los, Nick Fury convoca um grupo de pessoas com grandes habilidades, mas que jamais haviam trabalhado juntas: Tony Stark/Homem de Ferro , Steve Rogers/Capitão América, Thor, Bruce Banner/Hulk e Natasha Romanoff/Viúva Negra. Só que, apesar do grande perigo que a Terra corre, não é tão simples assim conter o ego e os interesses de cada um deles para que possam agir em grupo."
-      , "./osvingadores.jpg"
+      , "./Os_Vingadores.jpg"
     ],
     [
       "Ação",
@@ -761,8 +761,8 @@ var film = [
       2003,
       "Gore Verbinski",
       "Johnny Depp",
-      "Em pleno século XVII, o pirata Jack Sparrow tem seu navio saqueado e roubado pelo capitão Barbossa e sua tripulação. Com o navio de Sparrow, Barbossa invade e saqueia a cidade de Port Royal, levando consigo Elizabeth Swann, a filha do governador. Decidido a recuperar sua embarcação, Sparrow recebe a ajuda de Will Turner, um grande amigo de Elizabeth que parte em seu encalço. Porém, o que ambos não sabem é que o Pérola Negra, navio de Barbossa, foi atingido por uma terrível maldição que faz com que eles naveguem eternamente pelos oceanos e se transformem em esqueletos à noite."
-      , "./piratasdocaribeamaldicaodoperolanegra.jpg"
+      "O excêntrico capitão Jack Sparrow pretende salvar a bela Elizabeth, filha do governador, e seu navio, o Pérola Negra, levados pelo temido capitão Barbossa. Ele desbrava os mares e parte em direção à misteriosa Ilha da Morte, tentando impedir que os piratas-esqueleto derramem o sangue de Elizabeth para desfazer a maldição que os assola."
+      , "./Piratas_do_Caribe_A_Maldicao_do_Perola_Negra.jpg"
     ],
     [
       "Ação",
@@ -771,7 +771,7 @@ var film = [
       "Tim Miller",
       "Ryan Reynolds",
       "Wade Wilson é um ex-agente especial que passou a trabalhar como mercenário. Seu mundo é destruído quando um cientista maligno o tortura e o desfigura completamente. O experimento brutal transforma Wade em Deadpool, que ganha poderes especiais de cura e uma força aprimorada. Com a ajuda de aliados poderosos e um senso de humor mais desbocado e cínico do que nunca, o irreverente anti-herói usa habilidades e métodos violentos para se vingar do homem que quase acabou com a sua vida."
-      , "./deadpool.jpg"
+      , "./Deadpool.jpg"
     ],
     [
       "Ação",
@@ -780,7 +780,7 @@ var film = [
       "John McTiernan",
       "Bruce Willis",
       "O policial de Nova York John McClane está visitando sua família no Natal. Ele participa de uma confraternização de fim de ano na sede da empresa japonesa em que a esposa trabalha. A festa é interrompida por terroristas que invadem o edifício de luxo. McClane não demora a perceber que não há ninguém para salvá-los, a não ser ele próprio."
-      , "./durodematar.jpg"
+      , "./Duro_de_Matar.jpg"
     ],
     [
       "Ação",
@@ -798,7 +798,7 @@ var film = [
       "Alejandro G. Iñárritu",
       "Leonardo DiCaprio",
       "Após ser atacado por um urso, o caçador Hugh Glass é abandonado na floresta por seu companheiro John Fitzgerald. Apesar de muito ferido, Glass consegue sobreviver e vai em busca de vingança."
-      , "./oregresso.jpg"
+      , "./O_Regresso.jpg"
     ],
     [
       "Ação",
@@ -807,7 +807,7 @@ var film = [
       "Gary Ross",
       "Jennifer Lawrence",
       "Na região antigamente conhecida como América do Norte, a Capital de Panem controla 12 distritos e os força a escolher um garoto e uma garota, conhecidos como tributos, para competir em um evento anual televisionado. Todos os cidadãos assistem aos temidos jogos, no qual os jovens lutam até a morte, de modo que apenas um saia vitorioso. A jovem Katniss Everdeen, do Distrito 12, confia na habilidade de caça e na destreza com o arco, além dos instintos aguçados, nesta competição mortal."
-      , "./.jpg"
+      , "./Jogos_Vorazes.jpg"
     ],
     [
       "Ação",
@@ -816,7 +816,7 @@ var film = [
       "Sam Mendes",
       "Daniel Craig",
       "Após uma missão mal sucedida de James Bond, a identidade de agentes secretos é revelada e o M16, atacado. Ajudado por um agente de campo, Bond deverá seguir a trilha de Silva, um homem que habita o passado de M e que tem contas a acertar"
-      , "./.jpg"
+      , "./007_Operacao_Skyfall.jpg"
     ],
     [
       "Ação",
@@ -825,7 +825,7 @@ var film = [
       "Michael Bay",
       "Shia LaBeouf",
       "O destino da humanidade está em jogo quando duas raças de robôs, os Autobots e os vilões Decepticons, chegam à Terra. Os robôs possuem a capacidade de se transformarem em diferentes objetos mecânicos enquanto buscam a chave do poder supremo com a ajuda do jovem Sam."
-      , "./.jpg"
+      , "./Transformers.jpg"
     ],
     [
       "Ação",
@@ -834,7 +834,7 @@ var film = [
       "Pierre Morel",
       "Liam Neeson",
       "Bryan Mills, um ex-agente do governo anterior, está tentando se reconciliar com sua filha, Kim. Mas seus piores medos se tornam reais quando escravos do sexo raptam Kim e sua amiga assim que chegam em Paris para passar férias. Com apenas quatro dias até Kim ser leiloada, Bryan tem de recorrer à cada habilidade que ele aprendeu como agente para resgatá-la."
-      , "./.jpg"
+      , "./Busca_Implacavel.jpg"
     ],
     [
       "Ação",
@@ -843,7 +843,7 @@ var film = [
       "Matthew Vaughn",
       "Colin Firth",
       "Eggsy é um jovem com problemas de disciplina que parece perto de se tornar um criminoso. Determinado dia, ele entra em contato com Harry , que lhe apresenta à agência de espionagem Kingsman. O jovem se une a um time de recrutas em busca de uma vaga na agência. Ao mesmo tempo, Harry tenta impedir a ascensão do vilão Valentine . Adaptação da série de quadrinhos criada por Mark Millar e Dave Gibbons."
-      , "./.jpg"
+      , "./Kingsman_Servico_Secreto.jpg"
     ],
     [
       "Ação",
@@ -851,8 +851,8 @@ var film = [
       2012,
       "Rian Johnson",
       "Joseph Gordon-Levitt",
-      "Kansas City, 2044. Viagens no tempo são uma realidade, mas estão apenas disponíveis no mercado negro. Seu principal cliente é a máfia, que costuma enviar ao passado pessoas que deseja que sejam eliminadas, já que é bastante complicado se livrar dos corpos no futuro. Os responsáveis por estes assassinatos são os loopers, organização a qual Joe faz parte. Um dia, ao realizar mais um serviço corriqueiro, ele descobre que seu alvo é a versão mais velha de si mesmo , trazida em viagem no tempo por ter se tornado uma séria ameaça à máfia no futuro."
-      , "./.jpg"
+      "Na sociedade futurística de 2074, a viagem no tempo só está disponível a quem é capaz de pagar por ela no mercado negro. Quando os mafiosos querem eliminar alguém, eles enviam o alvo ao passado, onde um matador de aluguel conhecido como 'Looper' aguarda com a arma na mão. Joe é um desses assassinos contratados, e ele faz muito bem esse trabalho. Entretanto, as complicações surgem quando ele descobre que seu chefe decidiu fechar o ciclo e enviar o Joe do futuro de volta no tempo para matá-lo."
+      , "./Looper_Assassinos_do_Futuro.jpg"
     ],
     [
       "Ação",
@@ -861,7 +861,7 @@ var film = [
       "Matthew Vaughn",
       "Aaron Taylor-Johnson",
       "Usando sua paixão por histórias em quadrinhos, o adolescente Dave Lizewski decide se reinventar como super-herói, apesar da total falta de poderes especiais. O adolescente arruma uma fantasia, batiza-se de 'Kick - Ass' e começa a combater o crime com a ajuda de amigos justiceiros."
-      , "./.jpg"
+      , "./Kick-Ass.jpg"
     ],
     [
       "Ação",
@@ -870,7 +870,7 @@ var film = [
       "Roland Emmerich",
       "Will Smith",
       "Naves imensas e poderosas estão sobre as principais cidades do mundo. Desta vez, o objetivo é claro: destruir a raça humana. A curiosidade rapidamente se transforma em pânico quando as naves iniciam o ataque com raios de fogo. Começa a contagem regressiva. Agora, a única esperança está nas mãos de sobreviventes que têm apenas uma chance para tentar o impossível, antes que seja o fim da humanidade!"
-      , "./.jpg"
+      , "./Independence_Day.jpg"
     ],
     [
       "Ação",
@@ -879,7 +879,7 @@ var film = [
       "Doug Liman",
       "Franka Potente",
       "Um homem sem memória é resgatado do oceano por barco de pesca. Sobre si, ele só sabe que tem talento para matar e um chip implantado no quadril. Enquanto busca sua história, tenta escapar de pessoas que, inexplicavelmente, querem matá-lo."
-      , "./.jpg"
+      , "./A_Identidade_Bourne.jpg"
     ],
     [
       "Ação",
@@ -888,7 +888,7 @@ var film = [
       "Chan-wook Park",
       "Min-sik Choi",
       "Dae-Su é raptado e mantido em cativeiro por 15 anos num quarto de hotel, sem qualquer contato com o mundo externo. Quando ele é inexplicavelmente solto, descobre que é acusado pelo assassinato da esposa e embarca numa missão obsessiva por vingança."
-      , "./.jpg"
+      , "./Oldboy.jpg"
     ],
     [
       "Ação",
@@ -897,7 +897,7 @@ var film = [
       "Edgar Wright",
       "Simon Pegg",
       "Nicholas Angels, um policial de Londres, é transferido para a pacata vila britânica de Sandford e estranha o sossego do local. No entanto, essa tranquilidade está para acabar quando alguns moradores morrem em acidentes sinistros."
-      , "./.jpg"
+      , "./Chumbo_Grosso.jpg"
     ],
     [
       "Ação",
@@ -906,7 +906,7 @@ var film = [
       "David Leitch",
       "Keanu Reeves",
       "John Wick  é homem solitário que perdeu tudo na vida. Um assassino de aluguel aposentado, Wick é forçado a voltar ao jogo e enfrentar a máfia."
-      , "./.jpg"
+      , "./De_Volta_ao_Jogo.jpg"
     ]
   ]
 ];

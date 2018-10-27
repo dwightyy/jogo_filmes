@@ -105,9 +105,6 @@ class Filmes extends Component {
             ))}
           </div>
         </div>
-        <Link to={{ pathname: "/questoes" }}>
-          <Button text="Proxima" />
-        </Link>
       </div>
     );
   }

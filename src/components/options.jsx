@@ -29,7 +29,7 @@ class Options extends Component {
   componentDidMount() {
     this.setState(
       { movies: this.props.movies[1], perguntas: this.props.movies[0] },
-      () => {}
+      () => { }
     );
   }
   pegaStrResposta(resposta) {
@@ -43,6 +43,8 @@ class Options extends Component {
         return movie[3];
       } else if (this.state.perguntas[2] === "nomefilme") {
         return movie[1];
+      } else if (this.state.perguntas[2] === "atorfilme") {
+        return movie[4];
       } else {
         console.log("else", this.state.perguntas[2]);
         return "t";

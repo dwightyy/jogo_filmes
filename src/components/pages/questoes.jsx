@@ -52,12 +52,6 @@ class Questoes extends Component {
         movie[1],
         "nomefilme"
       ],
-
-      // [
-      //   `A sinopse  '${movie[5]}'  é de um filme que foi lançado em qual ano? `,
-      //   movie[2],
-      //   "sinopsefilme"
-      // ]
       [
         `Em qual ano foi lançado o filme do diretor, '${movie[3]}'?`,
         movie[2],

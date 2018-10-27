@@ -13,8 +13,10 @@ class TelaInicial extends Component {
   render() {
     return (
       <div>
-        <div className="container col-12" id="title-header">
-          <Header alignment={"text-center"} header={"MemoMovie"} />
+        <div className="row">
+          <div className="col-12" id="title-header">
+            <Header alignment={"text-center"} header={"MemoMovie"} />
+          </div>
         </div>
         <div className="row">
           <div className="col-6 offset-md-1">
