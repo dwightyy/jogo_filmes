@@ -28,7 +28,6 @@ class Inicio extends Component {
       console.log(this.state.selectedGenres);
     });
   }
-  //ss
   // confirmaInicio(event) {
   //   console.log(event);
   //   let c = window.confirm("Deseja realmente começar?");

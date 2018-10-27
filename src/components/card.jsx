@@ -1,12 +1,15 @@
 import React, { Component } from "react";
-import Placeholder from "../assets/Placeholder.jpg";
+var images = require.context('../assets', true);
 
 class CardFilme extends Component {
   state = {};
   render() {
+
+    let img_src = images(`${this.props.imagem}`)
+
     return (
       <div className="card col-2 offset-1">
-        <img className="card-img-top" src={Placeholder} alt="Card" />
+        <img className="card-img-top" src={img_src} alt="Card" />
         <div className="card-body">
           <h4 className="card-title">{this.props.titulo}</h4>
           <hr />

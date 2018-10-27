@@ -52,16 +52,13 @@ class Questoes extends Component {
         movie[1],
         "nomefilme"
       ],
-
-      // [
-      //   `A sinopse  '${movie[5]}'  é de um filme que foi lançado em qual ano? `,
-      //   movie[2],
-      //   "sinopsefilme"
-      // ]
       [
         `Em qual ano foi lançado o filme do diretor, '${movie[3]}'?`,
         movie[2],
         "anofilme"
+      ],
+      [
+        `Qual o ator que é personagem principal neste film, '${movie[1]}'?`, movie[4], "atorfilme"
       ]
     ];
     return questions;
@@ -81,7 +78,7 @@ class Questoes extends Component {
   componentDidMount() {
     this.setState({ movies: this.props.location.state.finalMovies }, () => {
       let perguntasFinal = this.montaPerguntas();
-      this.setState({ perguntas: perguntasFinal }, () => {});
+      this.setState({ perguntas: perguntasFinal }, () => { });
     });
   }
 
@@ -106,7 +103,7 @@ class Questoes extends Component {
   checkCorrect(respostaAtual, respostaSelecionada) {
     return respostaAtual == respostaSelecionada;
   }
-  novaPergunta() {}
+  novaPergunta() { }
 
   render() {
     if (this.state.perguntas[0]) {

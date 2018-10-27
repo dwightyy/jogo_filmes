@@ -77,6 +77,7 @@ class Filmes extends Component {
     const finzaliza = () => {
       this.setState({ timer: "end" });
     };
+
     return (
       <div>
         <div className="col-12 text-center">
@@ -86,7 +87,6 @@ class Filmes extends Component {
               callbackFinalizado={finzaliza}
             />
           </h1>
-          <button onClick={finzaliza} />
         </div>
         <div className="">
           <div className="d-flex text-center justify-content-center ">
@@ -100,13 +100,11 @@ class Filmes extends Component {
                 diretor={movie[3]}
                 ator={movie[4]}
                 sinopse={movie[5]}
+                imagem={movie[6]}
               />
             ))}
           </div>
         </div>
-        <Link to={{ pathname: "/questoes" }}>
-          <Button text="Proxima" />
-        </Link>
       </div>
     );
   }
