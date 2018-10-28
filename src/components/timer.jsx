@@ -46,7 +46,7 @@ class Timer extends Component {
       this.props.callbackFinalizado();
     } else if (dificuldade === "Médio" && this.state.time > 4000) {
       this.props.callbackFinalizado();
-    } else if (dificuldade === "Difícil" && this.state.time > 500000) {
+    } else if (dificuldade === "Difícil" && this.state.time > 5000) {
       this.props.callbackFinalizado();
     } else {
       return ms(this.state.time);

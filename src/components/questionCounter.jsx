@@ -11,19 +11,16 @@ class QuestionCounter extends Component {
     teste: 2
   };
 
-  updateCurrent(oldCurrent) {
-    this.setState({ current: oldCurrent + 1 });
+  updateCurrent() {
+    console.log("entrou no update");
+    this.setState({ current: this.state.current });
   }
   render() {
     return (
       <div className="text-center mx-auto">
-        <h1>{this.state.current} de 10</h1>
-        <Button
-          click={() => {
-            this.updateCurrent(this.state.current);
-          }}
-          text="Update question"
-        />
+        <h1>
+          {this.props.current + 1} de {this.props.total * 2}
+        </h1>
       </div>
     );
   }

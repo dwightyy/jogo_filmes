@@ -11,13 +11,13 @@ class ButtonOptions extends Component {
   render() {
     return (
       <button
+        value="text"
         onClick={this.handleClick}
         type="button"
         className={
           this.state.classname + (this.props.isActive ? "active" : "album")
         }
       >
-        <span>{this.props.name}</span>
         {this.props.text}
       </button>
     );

@@ -1,26 +1,35 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import Button from "../button";
 import QuestionCounter from "../questionCounter";
 import Paragraph from "../paragraph";
 import Options from "../options";
+import Redirect from "react-router-dom/Redirect";
+import ButtonOptions from "../buttonOptions";
+import ReactDOM from "react-dom";
 
 class Questoes extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       movies: [],
-      perguntas: [],
-      respSelecionada: {},
-      respostaAtual: [],
-      score: 0,
-      currentQuestion: 0
+      respostas: [],
+      finalQuestions: [],
+      finalizado: false,
+      currentQuestion: 0,
+      respostaSelecionada: "",
+      acertos: 0
     };
-    this.proximaPergunta = this.proximaPergunta.bind(this);
     this.respostaSelecionada = this.respostaSelecionada.bind(this);
+    this.handleClickProximaPergunta = this.handleClickProximaPergunta.bind(
+      this
+    );
   }
 
+  componentDidMount() {
+    this.setState({ movies: this.props.location.state.finalMovies }, () => {
+      this.montaPerguntas();
+    });
+  }
   shuffleArray(array) {
     var currentIndex = array.length,
       temporaryValue,
@@ -34,6 +43,7 @@ class Questoes extends Component {
     }
     return array;
   }
+
   montaPergunta(movie) {
     let questions = [
       [`A sinopse '${movie[5]}' é de qual filme?`, movie[1], "nomefilme"],
@@ -58,10 +68,48 @@ class Questoes extends Component {
         "anofilme"
       ],
       [
-        `Qual o ator que é personagem principal neste film, '${movie[1]}'?`, movie[4], "atorfilme"
+        `Qual o ator que é personagem principal neste film, '${movie[1]}'?`,
+        movie[4],
+        "atorfilme"
       ]
     ];
     return questions;
+  }
+
+  montaLsRespostas(finalMovies, finalQuestions) {
+    let respostas = [];
+    for (let pergunta of finalQuestions) {
+      let aux = [];
+      if (pergunta[2] === "anofilme") {
+        for (let filme of finalMovies) {
+          aux.push(filme[2]);
+        }
+      } else if (pergunta[2] === "nomefilme") {
+        for (let filme of finalMovies) {
+          aux.push(filme[1]);
+        }
+      } else if (pergunta[2] === "diretorfilme") {
+        for (let filme of finalMovies) {
+          aux.push(filme[3]);
+        }
+      } else if (pergunta[2] === "atorfilme") {
+        for (let filme of finalMovies) {
+          aux.push(filme[4]);
+        }
+      }
+      respostas.push(aux);
+    }
+    this.setState(
+      { respostas: respostas, finalQuestions: finalQuestions },
+      () => {
+        this.setState({
+          finalizado: true
+        });
+      }
+    );
+  }
+  respostaSelecionada(resp) {
+    this.setState({ respostaSelecionada: resp });
   }
 
   montaPerguntas() {
@@ -72,84 +120,75 @@ class Questoes extends Component {
         todasPerguntas.push(p);
       }
     });
-    var todasPerguntasEmbaralhadas = this.shuffleArray(todasPerguntas);
-    return todasPerguntasEmbaralhadas;
-  }
-  componentDidMount() {
-    this.setState({ movies: this.props.location.state.finalMovies }, () => {
-      let perguntasFinal = this.montaPerguntas();
-      this.setState({ perguntas: perguntasFinal }, () => { });
-    });
-  }
+    var perguntasEmbalharadas = this.shuffleArray(todasPerguntas);
 
-  respostaSelecionada(activeIndex, perguntas, currentSelected) {
-    this.setState({
-      respSelecionada: activeIndex,
-      respostaAtual: perguntas,
-      slecion: currentSelected
-    });
+    var lsRespostas = this.montaLsRespostas(
+      this.state.movies,
+      perguntasEmbalharadas.splice(0, this.state.movies.length * 2)
+    );
   }
+  limpaRespostas() {}
 
-  proximaPergunta() {
-    if (this.state.respSelecionada) {
-      if (this.checkCorrect(this.state.respostaAtual[1], this.state.slecion)) {
-        let pontuacaoAtual = this.state.score;
-        this.setState({ score: pontuacaoAtual + 1 });
+  handleClickProximaPergunta() {
+    if (this.state.respostaSelecionada != undefined) {
+      if (this.state.currentQuestion <= this.state.movies.length * 2 - 1) {
+        let aux = this.state.currentQuestion;
+        let auxAcertos = this.state.acertos;
+        if (
+          this.state.respostaSelecionada ===
+          this.state.finalQuestions[this.state.currentQuestion][1]
+        ) {
+          this.setState({ acertos: auxAcertos + 1 });
+        }
+        this.setState({ currentQuestion: aux + 1 }, () => {
+          if (this.state.currentQuestion > this.state.movies.length * 2 - 1) {
+          }
+        });
       }
-      let questaoAtual = this.state.currentQuestion;
-      this.setState({ currentQuestion: questaoAtual + 1 });
     }
   }
-  checkCorrect(respostaAtual, respostaSelecionada) {
-    return respostaAtual == respostaSelecionada;
-  }
-  novaPergunta() { }
-
   render() {
-    if (this.state.perguntas[0]) {
-      let perguntasErespostas = [];
-      let categoria = this.state.perguntas[this.state.currentQuestion][2];
-      for (let i of this.state.movies) {
-        if (categoria == "anofilme") {
-          perguntasErespostas = [
-            this.state.perguntas[this.state.currentQuestion][0],
-            this.state.movies[0]
-          ];
-          console.log(perguntasErespostas);
-        }
-      }
-
-      var filmesEPerguntas = [this.state.perguntas[0], this.state.movies];
+    if (
+      this.state.finalizado === true &&
+      this.state.currentQuestion <= this.state.movies.length * 2 - 1
+    ) {
       return (
         <div>
-          <div className="row mx-auto col-4 offset-4">
-            <QuestionCounter />
-          </div>
-          <div className="text-center row col-4 offset-4">
-            <Paragraph
-              paragraph={this.state.perguntas[this.state.currentQuestion][0]}
-            />
-          </div>
-          <div className="row col-4 offset-4">
-            <Options
-              novaPergunta={this.novaPergunta}
-              getResposta={this.respostaSelecionada}
-              movies={filmesEPerguntas}
-            />
-          </div>
-          <div className="row col-4 my-5 offset-4">
-            <Button click={this.proximaPergunta} text={"Proxima pergunta"} />
-          </div>
-
-          <div id="btnEncerrar" className="row col-2 offset-10">
-            <Link to="/pontuacao">
-              <Button classname="btn " text="Encerrar partida" />
-            </Link>
-          </div>
+          <QuestionCounter
+            total={this.state.movies.length}
+            current={this.state.currentQuestion}
+          />
+          <Paragraph
+            paragraph={this.state.finalQuestions[this.state.currentQuestion][0]}
+          />
+          <Options
+            respostas={this.state.respostas[this.state.currentQuestion]}
+            novaPergunta={this.novaPergunta}
+            getResposta={this.respostaSelecionada}
+          />
+          <Button
+            click={this.handleClickProximaPergunta}
+            text={"Proxima Pergunta"}
+          />
         </div>
       );
+    } else if (
+      this.state.currentQuestion > this.state.movies.length * 2 - 1 &&
+      this.state.movies.length > 0
+    ) {
+      return (
+        <Redirect
+          to={{
+            pathname: "/pontuacao",
+            state: {
+              acertos: this.state.acertos,
+              total: this.state.movies.length * 2
+            }
+          }}
+        />
+      );
     } else {
-      return <div />;
+      return null;
     }
   }
 }
