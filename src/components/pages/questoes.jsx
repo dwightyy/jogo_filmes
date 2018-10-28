@@ -127,7 +127,7 @@ class Questoes extends Component {
       perguntasEmbalharadas.splice(0, this.state.movies.length * 2)
     );
   }
-  limpaRespostas() {}
+  limpaRespostas() { }
 
   handleClickProximaPergunta() {
     if (this.state.respostaSelecionada != undefined) {
@@ -153,23 +153,31 @@ class Questoes extends Component {
       this.state.currentQuestion <= this.state.movies.length * 2 - 1
     ) {
       return (
-        <div>
-          <QuestionCounter
-            total={this.state.movies.length}
-            current={this.state.currentQuestion}
-          />
-          <Paragraph
-            paragraph={this.state.finalQuestions[this.state.currentQuestion][0]}
-          />
-          <Options
-            respostas={this.state.respostas[this.state.currentQuestion]}
-            novaPergunta={this.novaPergunta}
-            getResposta={this.respostaSelecionada}
-          />
-          <Button
-            click={this.handleClickProximaPergunta}
-            text={"Proxima Pergunta"}
-          />
+        <div id="questoes">
+          <div id="contador">
+            <QuestionCounter
+              total={this.state.movies.length}
+              current={this.state.currentQuestion}
+            />
+          </div>
+          <div id="texto">
+            <Paragraph
+              paragraph={this.state.finalQuestions[this.state.currentQuestion][0]}
+            />
+          </div>
+          <div>
+            <Options
+              respostas={this.state.respostas[this.state.currentQuestion]}
+              novaPergunta={this.novaPergunta}
+              getResposta={this.respostaSelecionada}
+            />
+          </div>
+          <div id="questoesButao">
+            <Button
+              click={this.handleClickProximaPergunta}
+              text={"Proxima Pergunta"}
+            />
+          </div>
         </div>
       );
     } else if (

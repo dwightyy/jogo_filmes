@@ -24,7 +24,7 @@ class Pontuacao extends Component {
     ) {
       return (
         <div>
-          <div className="col-4 offset-4 text-center">
+          <div className="col-12 text-center" id="tituloPontuacao">
             <Title title="Pontuação Final" />
           </div>
           <div className="my-5 col-4 offset-4 text-center">
@@ -33,7 +33,7 @@ class Pontuacao extends Component {
               {this.props.location.state.total}
             </h1>
           </div>
-          <div className="my-5 d-flex justify-content-between col-4 offset-4">
+          <div className="my-5 d-flex justify-content-between col-4 offset-4" id="butoesPontuacao">
             <div>
               <Button text="Jogar Novamente" />
             </div>
