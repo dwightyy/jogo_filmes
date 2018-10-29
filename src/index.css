@@ -94,7 +94,8 @@ h5 p {
 
 #contador, #tituloPontuacao{
   background-color: rgb(21 , 24, 29);
-  color: rgb(188, 187, 184);  
+  color: rgb(188, 187, 184);
+  height: 10% !important;  
 }
 
 #containerInicio{
@@ -108,4 +109,8 @@ h5 p {
 
 #respostas ol ul{
   color:  rgb(188, 187, 184);
+}
+
+#options button{
+  margin-top: 5% !important;  
 }

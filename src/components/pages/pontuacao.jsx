@@ -36,7 +36,7 @@ class Pontuacao extends Component {
               {this.props.location.state.total}
             </h1>
           </div>
-          <div className="my-5 d-flex justify-content-between col-4 offset-4" id="butoesPontuacao">
+          <div className="my-5 d-flex justify-content-between col-6 offset-3">
             <Link to={{ pathname: "/inicio" }} >
               <div>
                 <Button text="Jogar Novamente" />

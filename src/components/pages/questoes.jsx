@@ -46,10 +46,40 @@ class Questoes extends Component {
   }
 
   montaPergunta(movie) {
+
     let questions = [
-      [`A sinopse "${movie[5]}" é de qual filme?`, movie[1], "nomefilme"],
       [
-        `O filme "${movie[1]}",  foi lançado em qual ano?`,
+        `A sinopse "${movie[5]}" é de qual filme?`,
+        movie[1],
+        "nomefilme"
+      ],
+      [
+        `No ano de ${movie[2]}, qual filme estava estreando?`,
+        movie[1],
+        "nomefilme"
+      ],
+      [
+        `O(a) diretor(a) ${movie[3]} dirigiu qual dos filmes abaixo?`,
+        movie[1],
+        "nomefilme"
+      ],
+      [
+        `O(A) ator/atriz ${movie[4]}, é personagem principal de qual filme?`,
+        movie[1],
+        "nomefilme"
+      ],
+      [
+        `O filme "${movie[1]}", foi lançado em qual ano?`,
+        movie[2],
+        "anofilme"
+      ],
+      [
+        `Em qual ano foi lançado o filme do(a) diretor(a) ${movie[3]}?`,
+        movie[2],
+        "anofilme"
+      ],
+      [
+        `O ator/atriz ${movie[4]} é personagem principal no filme que estreiou no ano de?`,
         movie[2],
         "anofilme"
       ],
@@ -59,20 +89,36 @@ class Questoes extends Component {
         "diretorfilme"
       ],
       [
-        `O(A) ator/atriz "${movie[4]}", é personagem principal de qual filme?`,
-        movie[1],
-        "nomefilme"
+        `No ano de ${movie[2]} foi lançado qual filme deste(a) diretor(a)?`,
+        movie[3],
+        "diretorfilme"
       ],
       [
-        `Em qual ano foi lançado o filme do(a) diretor(a), "${movie[3]}"?`,
-        movie[2],
-        "anofilme"
+        `O(A) ator/atriz ${movie[4]} trabalhou com qual diretor(a)?`,
+        movie[3],
+        "diretorfilme"
       ],
       [
-        `Qual o(a) ator/atriz que é personagem principal neste film, "${movie[1]}"?`,
+        `Qual o(a) ator/atriz que é personagem principal neste filme "${movie[1]}"?`,
+        movie[4],
+        "atorfilme"
+      ],
+      [
+        `Qual o(a) ator/atriz que é personagem principal no filme do diretor(a) ${movie[3]}?`,
+        movie[4],
+        "atorfilme"
+      ],
+      [
+        `Qual o(a) ator/atriz que é personagem principal no filme com esta sinopse "${movie[5]}"?`,
+        movie[4],
+        "atorfilme"
+      ],
+      [
+        `Qual o(a) ator/atriz que é personagem principal no filme que estreiou no ano de ${movie[2]}?`,
         movie[4],
         "atorfilme"
       ]
+
     ];
     return questions;
   }
@@ -169,7 +215,7 @@ class Questoes extends Component {
               paragraph={this.state.finalQuestions[this.state.currentQuestion][0]}
             />
           </div>
-          <div>
+          <div id="options">
             <Options
               respostas={this.state.respostas[this.state.currentQuestion]}
               novaPergunta={this.novaPergunta}
