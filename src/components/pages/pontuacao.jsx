@@ -10,13 +10,16 @@ class Pontuacao extends Component {
     this.state = {
       isOpen: true,
       acertos: 0,
-      total: 0
+      total: 0,
     };
   }
+
   render() {
     console.log(
       this.props.location.state.acertos,
-      this.props.location.state.total
+      this.props.location.state.total,
+      this.props.location.state.perguntas,
+      this.props.location.state.respostas, "PERGUNTAS E RESPOSTSAS NA PONTUAÇÃO"
     );
     if (
       this.props.location.state.acertos != undefined &&
@@ -34,21 +37,38 @@ class Pontuacao extends Component {
             </h1>
           </div>
           <div className="my-5 d-flex justify-content-between col-4 offset-4" id="butoesPontuacao">
-            <div>
-              <Button text="Jogar Novamente" />
-            </div>
+            <Link to={{ pathname: "/inicio" }} >
+              <div>
+                <Button text="Jogar Novamente" />
+              </div>
+            </Link>
+
             <Link
-              to={{ pathname: "/inicio", state: { pontos: this.state.pontos } }}
+              to={{ pathname: "/tela-inicial" }}
             >
               <div>
                 <Button text="Voltar ao inicio" />
+              </div>
+            </Link>
+
+            <Link
+              to={{
+                pathname: "/respostas",
+                state: {
+                  perguntas: this.props.location.state.perguntas,
+                  respostas: this.props.location.state.respostas.split(",")
+                }
+              }}
+            >
+              <div>
+                <Button text="Ver Respostas" />
               </div>
             </Link>
             <div>
               <div className="App" />
             </div>
           </div>
-        </div>
+        </div >
       );
     } else {
       return null;

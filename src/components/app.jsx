@@ -5,6 +5,7 @@ import Inicio from "./pages/inicio";
 import Filmes from "./pages/filmes";
 import Questoes from "./pages/questoes";
 import Pontuacao from "./pages/pontuacao";
+import Respostas from "./pages/respostas";
 class App extends Component {
   state = {};
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <Route path="/filmes" component={Filmes} />
         <Route path="/questoes" component={Questoes} />
         <Route path="/pontuacao" component={Pontuacao} />
+        <Route path="/respostas" component={Respostas} />
         <TelaInicial />
       </Switch>
     );

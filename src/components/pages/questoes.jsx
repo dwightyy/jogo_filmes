@@ -17,6 +17,7 @@ class Questoes extends Component {
       finalizado: false,
       currentQuestion: 0,
       respostaSelecionada: "",
+      respostasSelecionadas: "",
       acertos: 0
     };
     this.respostaSelecionada = this.respostaSelecionada.bind(this);
@@ -46,29 +47,29 @@ class Questoes extends Component {
 
   montaPergunta(movie) {
     let questions = [
-      [`A sinopse '${movie[5]}' é de qual filme?`, movie[1], "nomefilme"],
+      [`A sinopse "${movie[5]}" é de qual filme?`, movie[1], "nomefilme"],
       [
-        `O filme '${movie[1]}',  foi lançado em qual ano?`,
+        `O filme "${movie[1]}",  foi lançado em qual ano?`,
         movie[2],
         "anofilme"
       ],
       [
-        `Qual o nome do diretor do filme '${movie[1]}'?`,
+        `Qual o nome do(a) diretor(a) do filme "${movie[1]}"?`,
         movie[3],
         "diretorfilme"
       ],
       [
-        `O ator '${movie[4]}', é personagem principal de qual filme?`,
+        `O(A) ator/atriz "${movie[4]}", é personagem principal de qual filme?`,
         movie[1],
         "nomefilme"
       ],
       [
-        `Em qual ano foi lançado o filme do diretor, '${movie[3]}'?`,
+        `Em qual ano foi lançado o filme do(a) diretor(a), "${movie[3]}"?`,
         movie[2],
         "anofilme"
       ],
       [
-        `Qual o ator que é personagem principal neste film, '${movie[1]}'?`,
+        `Qual o(a) ator/atriz que é personagem principal neste film, "${movie[1]}"?`,
         movie[4],
         "atorfilme"
       ]
@@ -140,6 +141,7 @@ class Questoes extends Component {
         ) {
           this.setState({ acertos: auxAcertos + 1 });
         }
+        this.setState({ respostasSelecionadas: this.state.respostasSelecionadas + this.state.respostaSelecionada + "," })
         this.setState({ currentQuestion: aux + 1 }, () => {
           if (this.state.currentQuestion > this.state.movies.length * 2 - 1) {
           }
@@ -148,6 +150,8 @@ class Questoes extends Component {
     }
   }
   render() {
+    console.log(this.state.finalQuestions, "questões finais")
+    console.log(this.state.respostasSelecionadas, "respostas finais")
     if (
       this.state.finalizado === true &&
       this.state.currentQuestion <= this.state.movies.length * 2 - 1
@@ -190,7 +194,9 @@ class Questoes extends Component {
             pathname: "/pontuacao",
             state: {
               acertos: this.state.acertos,
-              total: this.state.movies.length * 2
+              total: this.state.movies.length * 2,
+              perguntas: this.state.finalQuestions,
+              respostas: this.state.respostasSelecionadas
             }
           }}
         />

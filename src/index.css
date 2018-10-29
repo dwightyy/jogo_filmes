@@ -83,7 +83,7 @@ h5 p {
 }
 
 #texto{
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 #questoesButao{  
@@ -97,3 +97,15 @@ h5 p {
   color: rgb(188, 187, 184);  
 }
 
+#containerInicio{
+  margin-top: 5%;
+}
+
+#respostas p{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#respostas ol ul{
+  color:  rgb(188, 187, 184);
+}

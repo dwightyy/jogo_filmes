@@ -18,7 +18,7 @@ class TelaInicial extends Component {
             <Header alignment={"text-center"} header={"MemoMovie"} />
           </div>
         </div>
-        <div className="row">
+        <div className="row" id="containerInicio">
           <div className="col-6 offset-md-1">
             <Title alignment={"text-center"} title={"Instruções"} />
           </div>

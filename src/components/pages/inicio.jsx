@@ -20,23 +20,13 @@ class Inicio extends Component {
   }
   getSelectedDifficulty(newDifficulty) {
     this.setState({ selectedDifficulty: newDifficulty }, () => {
-      console.log(this.state.selectedDifficulty);
     });
   }
   getSelectedGenres(genres) {
     this.setState({ selectedGenres: genres }, () => {
-      console.log(this.state.selectedGenres);
     });
   }
-  // confirmaInicio(event) {
-  //   console.log(event);
-  //   let c = window.confirm("Deseja realmente começar?");
-  //   if (c) {
-  //     console.log("começou");
-  //   } else {
-  //     console.log("cancelou");
-  //   }
-  // }
+
   render() {
     return (
       <div>

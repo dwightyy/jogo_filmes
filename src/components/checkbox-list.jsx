@@ -13,7 +13,6 @@ class checkboxList extends Component {
     var selecionado = event.target.checked;
     var genero = event.target.value;
     var lsSelecionados = this.state.selectedGenres;
-    console.log(lsSelecionados);
     if (selecionado) {
       lsSelecionados.push(genero);
     } else {
