@@ -6,12 +6,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   background-color: rgb(30, 37, 45);
- 	color: #9ab;
+  color: #9ab;
 }
 
 .paragraph-div {
   word-wrap: break-word;
 }
+
 .conteiner {
   margin-top: 2.5%;
 }
@@ -19,6 +20,7 @@ body {
 #navbar1 {
   background-color: red !important;
 }
+
 #btnComecar {
   margin-top: 10%;
   margin-bottom: 1%;
@@ -26,18 +28,18 @@ body {
 
 .card {
   margin-top: 1%;
-  border: 2px solid rgba(0, 0, 0, 0.5);  
+  border: 2px solid rgba(0, 0, 0, 0.5);
   margin-left: 2% !important;
   font-size: 15px;
   max-height: 960px;
-  background-color: rgb(21 , 24, 29);
+  background-color: rgb(21, 24, 29);
 }
 
-.card img{
+.card img {
   display: block;
 }
 
-.card h5{
+.card h5 {
   border-bottom: 1px solid rgb(188, 187, 184);
 }
 
@@ -56,61 +58,70 @@ body {
 hr {
   margin-top: 5px;
 }
+
 h5 {
   font-weight: 600;
   font-size: 17px;
 }
+
 span {
   font-weight: 100;
 }
+
 h5 p {
   font-weight: 100;
   font-size: 15px;
 }
+
 .cardBlurred {
   filter: blur(1.5rem);
 }
 
-#title-header { 
-  background-color: rgb(21 , 24, 29);
+#title-header {
+  background-color: rgb(21, 24, 29);
   color: rgb(188, 187, 184);
   height: 100px;
   font-size: 3em;
 }
 
-#questoes{
-  text-align: center;    
+#questoes {
+  text-align: center;
 }
 
-#texto{
+#texto {
   font-size: 1.3em;
 }
 
-#questoesButao{  
+#questoesButao {
   margin-top: 3%;
   margin-left: 25%;
-  max-width: 50%; 
+  max-width: 50%;
 }
 
-#contador, #tituloPontuacao{
-  background-color: rgb(21 , 24, 29);
+#contador,
+#tituloPontuacao {
+  background-color: rgb(21, 24, 29);
   color: rgb(188, 187, 184);
-  height: 10% !important;  
+  height: 10% !important;
 }
 
-#containerInicio{
+#containerInicio {
   margin-top: 5%;
 }
 
-#respostas p{
+#respostas p {
   text-align: center;
   font-size: 1.5em;
 }
 
-#respostas ol ul{
-  color:  rgb(188, 187, 184);
+#respostas ol ul {
+  color: rgb(188, 187, 184);
 }
 
-#options button{
-  margin-top: 5% !important;  
+#options button {
+  margin-top: 5% !important;
+}
+
+.checkboxls {
+  margin-right: 4% !important;
 }

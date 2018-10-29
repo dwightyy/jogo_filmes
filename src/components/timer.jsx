@@ -22,31 +22,35 @@ class Timer extends Component {
       start: Date.now() - this.state.time
     });
     this.timer = setInterval(
-      () =>
-        this.setState({
-          time: Date.now() - this.state.start
-        }),
+      () => this.setState({
+        time: Date.now() - this.state.start
+      }),
       1
     );
   }
   stopTimer() {
-    this.setState({ isOn: false });
+    this.setState({
+      isOn: false
+    });
     clearInterval(this.timer);
   }
 
   resetTimer() {
-    this.setState({ time: 0, isOn: false });
+    this.setState({
+      time: 0,
+      isOn: false
+    });
   }
   componentDidMount() {
     this.startTimer();
   }
   actual() {
     let dificuldade = this.props.dificuldade;
-    if (dificuldade === "Fácil" && this.state.time > 3000) {
+    if (dificuldade === "Fácil" && this.state.time > 30000) {
       this.props.callbackFinalizado();
-    } else if (dificuldade === "Médio" && this.state.time > 4000) {
+    } else if (dificuldade === "Médio" && this.state.time > 40000) {
       this.props.callbackFinalizado();
-    } else if (dificuldade === "Difícil" && this.state.time > 5000) {
+    } else if (dificuldade === "Difícil" && this.state.time > 50000) {
       this.props.callbackFinalizado();
     } else {
       return ms(this.state.time);
@@ -57,7 +61,7 @@ class Timer extends Component {
       <div>
         <h3>{this.actual()}</h3>
       </div>
-    );
+      );
   }
 }
 

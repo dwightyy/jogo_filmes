@@ -19,12 +19,24 @@ class Inicio extends Component {
     this.getSelectedGenres = this.getSelectedGenres.bind(this);
   }
   getSelectedDifficulty(newDifficulty) {
-    this.setState({ selectedDifficulty: newDifficulty }, () => {
+    this.setState({
+      selectedDifficulty: newDifficulty
+    }, () => {
     });
   }
   getSelectedGenres(genres) {
-    this.setState({ selectedGenres: genres }, () => {
+    this.setState({
+      selectedGenres: genres
+    }, () => {
     });
+  }
+
+  isSelected() {
+    console.log('chamou')
+    if (this.state.selectedGenres.length != 0 && this.state.selectedDifficulty != null) {
+      return true
+    }
+    return false
   }
 
   render() {
@@ -37,37 +49,38 @@ class Inicio extends Component {
         </div>
         <div id="btnComecar" className="row offset-5 col-2">
           <Link
-            to={{
-              pathname: "/filmes",
-              state: {
-                dificuldade: this.state.selectedDifficulty,
-                generos: this.state.selectedGenres
-              }
-            }}
-          >
+      to={{
+        pathname: "/filmes",
+        state: {
+          dificuldade: this.state.selectedDifficulty,
+          generos: this.state.selectedGenres
+        }
+      }}
+      >
+     
             <Prompt
-              when={this.componentWillUnmount}
-              message="Deseja começar a partida?"
-            />
+      when={this.componentWillUnmount}
+      message="Deseja começar a partida?"
+      />
             <Button text={"Começar Partida"} />
           </Link>
         </div>
         <div className="align-self-center row">
           <div className="col-1 offset-5">
             <RadioList
-              getSelectedDifficulty={this.getSelectedDifficulty}
-              dificuldades={this.state.dificuldades}
-            />
+      getSelectedDifficulty={this.getSelectedDifficulty}
+      dificuldades={this.state.dificuldades}
+      />
           </div>
-          <div className="col-2 ">
+          <div className="col-2 checkboxls">
             <CheckboxList
-              getSelectedGenres={this.getSelectedGenres}
-              generos={this.state.generos}
-            />
+      getSelectedGenres={this.getSelectedGenres}
+      generos={this.state.generos}
+      />
           </div>
         </div>
       </div>
-    );
+      );
   }
 }
 
